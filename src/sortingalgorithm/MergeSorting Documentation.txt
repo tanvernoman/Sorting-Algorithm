@@ -1,0 +1,22 @@
+Merge sorting: By Recursion
+
+sort list
+	sort first half of the list
+	sort second half of the list
+	merge sorted halves into one sorted list 
+end sort;
+
+sort (first half of list)
+	sort first half of (first half of list) //one quarter of the original list
+	sort second half of (first half of list) //one quarter of the original list
+	merge sorted halves into one sorted list
+end sort
+
+We can modify our algorithm as follows:
+sort a list
+if the list contains more than one element then
+	sort first half of list
+	sort second half of list
+	merge sorted halves into one sorted list
+end if
+end sort

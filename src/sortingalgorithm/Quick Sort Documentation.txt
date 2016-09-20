@@ -1,0 +1,20 @@
+Sorting a List of Items with Quicksort
+At the heart of quicksort is the notion of partitioning the list with respect to one of
+ the values called a pivot. For
+example, suppose we are given the following list to be sorted:
+
+53 12 98 63 18 32 80 46 72 21
+
+We can partition it with respect to the first value, 53. This means placing 53 in such
+ a position that all values to the left of it are smaller and all values to the right 
+are greater than or equal to it. Shortly, we will describe an algorithm
+that will partition num as follows:
+
+21 12 18 32 46 53 80 98 72 63 
+
+The value 53 is used as the pivot. It is placed in position 6. All values to the left
+ of 53 are smaller than 53, and all values to the right are greater. 
+The location in which the pivot is placed is called the division point (dp, say). By
+definition, 53 is in its final sorted position.
+If we can sort num[1..dp-1] and num[dp+1..n], we would have sorted the entire list. But we can use the same
+process to sort these pieces, indicating that a recursive procedure is appropriate.

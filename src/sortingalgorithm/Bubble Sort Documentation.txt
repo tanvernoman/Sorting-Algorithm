@@ -1,0 +1,27 @@
+Bubble Sort:
+sort works by comparing neighbouring data items in an array, and if the two items 
+are not sorted relative to each other, the two items are exchanged.
+
+Consider the following representation of data in an array. It is not in any sorted 
+order, and we wish to sort the data so that the higher values are to the left and the
+ lower values are to the right. We use the convention that the leftmost array element is 
+element zero, and the index increases by one as we move to the right.
+
+The first step of the process is to compare the contents of element [0] with the 
+contents of element [1]. If element [0] is less than element [1] the two items are 
+unsorted relative to each other, and they must be exchanged. In this case the two 
+ 
+8 2 6 7 9 
+elements are already in order, and should not be exchanged.
+
+The description above is of course only valid for the data given above. In more general terms the process can be described thus:
+
+
+while()
+{
+   for number of elements - 1
+   {
+      compare adjacent elements
+      if elements out of order then exchange elements or swap
+   }
+}
